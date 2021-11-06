@@ -1,4 +1,5 @@
 ﻿using BethanysPieShopHRM.Shared;
+using BethanysPieShopHRM2.Services;
 using Microsoft.AspNetCore.Components;
 using System;
 using System.Collections.Generic;
@@ -11,17 +12,20 @@ namespace BethanysPieShopHRM2.Pages
     {
 		[Parameter]
 		public string EmployeeId { get; set; }
-		public Employee Employee { get; set; }
+		public Employee Employee { get; set; } = new Employee();
 
-		protected override Task OnInitializedAsync()
+		[Inject]
+		public IEmployeeDataService EmployeeDataService { get; set; }
+
+		protected async override  Task OnInitializedAsync()
 		{
+			Employee = await EmployeeDataService.GetEmployeeDetails(int.Parse(EmployeeId));
 
-			InitializeCountries();
-			InitializeJobCategories();
-			InitializeEmployees();
-			Employee = Employees.FirstOrDefault(x => x.EmployeeId == int.Parse(EmployeeId));
-
-			return base.OnInitializedAsync();
+			//InitializeCountries();
+			//InitializeJobCategories();
+			//InitializeEmployees();
+			//Employee = Employees.FirstOrDefault(x => x.EmployeeId == int.Parse(EmployeeId));
+			//return base.OnInitializedAsync();
 		}
 
 		public IEnumerable<Employee> Employees { get; set; }

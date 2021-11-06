@@ -1,7 +1,11 @@
 ﻿using BethanysPieShopHRM.Shared;
+using BethanysPieShopHRM2.Services;
+using Microsoft.AspNetCore.Components;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
+using System.Net.Http.Json;
 using System.Threading.Tasks;
 
 namespace BethanysPieShopHRM2.Pages
@@ -14,13 +18,17 @@ namespace BethanysPieShopHRM2.Pages
 
         private List<JobCategory> JobCategories { get; set; }
 
-        protected override Task OnInitializedAsync()
-        {
-            InitializeCountries();
-            InitializeJobCategories();
-            InitializeEmployees();
+        [Inject]
+        public IEmployeeDataService EmployeeDataService { get; set; }
 
-            return base.OnInitializedAsync();
+        protected override async Task OnInitializedAsync()
+        {
+            Employees = (await EmployeeDataService.GetAllEmployees()).ToList();
+
+            //InitializeCountries();
+            //InitializeJobCategories();
+            //InitializeEmployees();
+            //return base.OnInitializedAsync();
         }
 
 
