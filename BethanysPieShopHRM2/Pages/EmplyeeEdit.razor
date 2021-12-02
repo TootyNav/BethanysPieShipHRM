@@ -5,4 +5,41 @@
 <section class="employee-edit">
     <h1 class="page-title">Detail for @Employee.FirstName @Employee.LastName</h1>
 
+    <EditForm Model="@Employee">
+
+        <div class="form-group row">
+            <label for="@Employee.FirstName" class="col-sm-3">First Name:</label>
+            <InputText id="Fistname" class="form-control col-sm-8" @bind-Value="@Employee.FirstName" placeholder="Enter first name"></InputText>
+        </div>
+
+        <div class="form-group row">
+            <label for="@Employee.LastName" class="col-sm-3">Last Name:</label>
+            <InputText id="LastName" class="form-control col-sm-8" @bind-Value="@Employee.LastName" placeholder="Enter last name"></InputText>
+        </div>
+
+        <div class="form-group row">
+            <label for="@Employee.Email" class="col-sm-3">Email:</label>
+            <InputText id="Email" class="form-control col-sm-8" @bind-Value="@Employee.Email" placeholder="Enter Email"></InputText>
+        </div>
+
+        <div class="form-group row">
+            <label for="@Employee.BirthDate" class="col-sm-3">BirthDate:</label>
+            <InputDate id="BirthDate" class="form-control col-sm-8" @bind-Value="@Employee.BirthDate" placeholder="Enter BirthDate"></InputDate>
+        </div>
+
+        <div class="form-group row">
+            <label for="@Employee.Street" class="col-sm-3">Street Name:</label>
+            <InputText id="Street" class="form-control col-sm-8" @bind-Value="@Employee.Street" placeholder="Enter Street name"></InputText>
+        </div>
+
+        <div class="form-group row">
+            <label for="@Employee.Zip" class="col-sm-3">Zip Code:</label>
+            <InputText id="Zip" class="form-control col-sm-8" @bind-Value="@Employee.Zip" placeholder="Enter Zip"></InputText>
+        </div>
+
+        <div class="form-group row">
+            <label for="@Employee.City" class="col-sm-3">City:</label>
+            <InputText id="City" class="form-control col-sm-8" @bind-Value="@Employee.City" placeholder="Enter City"></InputText>
+        </div>
+    </EditForm>
 </section>
