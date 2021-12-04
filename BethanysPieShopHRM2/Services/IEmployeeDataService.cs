@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace BethanysPieShopHRM2.Services
+namespace BethanysPieShopHRM.App.Services
 {
     public interface IEmployeeDataService
     {

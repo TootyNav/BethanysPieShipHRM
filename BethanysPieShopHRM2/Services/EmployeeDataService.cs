@@ -7,7 +7,7 @@ using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 
-namespace BethanysPieShopHRM2.Services
+namespace BethanysPieShopHRM.App.Services
 {
     public class EmployeeDataService : IEmployeeDataService
     {

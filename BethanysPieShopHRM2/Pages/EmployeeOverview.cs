@@ -1,5 +1,5 @@
 ﻿using BethanysPieShopHRM.Shared;
-using BethanysPieShopHRM2.Services;
+using BethanysPieShopHRM.App.Services;
 using Microsoft.AspNetCore.Components;
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Net.Http;
 using System.Net.Http.Json;
 using System.Threading.Tasks;
 
-namespace BethanysPieShopHRM2.Pages
+namespace BethanysPieShopHRM.App.Pages
 {
     public partial class EmployeeOverview
     {
