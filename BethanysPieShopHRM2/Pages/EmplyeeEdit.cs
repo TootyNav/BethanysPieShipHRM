@@ -19,8 +19,8 @@ namespace BethanysPieShopHRM.App.Pages
         [Inject]
         public IJobCategoryDataService JobCategoryDataService { get; set; }
 
-        //[Inject]
-        //public NavigationManager NavigationManager { get; set; }
+        [Inject]
+        public NavigationManager NavigationManager { get; set; }
 
 
         [Parameter]
@@ -109,10 +109,10 @@ namespace BethanysPieShopHRM.App.Pages
             Saved = true;
         }
 
-        //protected void NavigateToOverview()
-        //{
-        //    NavigationManager.NavigateTo("/employeeoverview");
-        //}
+        protected void NavigateToOverview()
+        {
+            NavigationManager.NavigateTo("/employeeoverview");
+        }
     }
 
 }

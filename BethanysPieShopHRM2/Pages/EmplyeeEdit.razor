@@ -10,6 +10,10 @@
 
         <EditForm Model="@Employee" OnValidSubmit="@HandleValidSubmit" OnInvalidSubmit="@HandleInvalidSubmit">
 
+            <DataAnnotationsValidator></DataAnnotationsValidator>
+            <ValidationSummary></ValidationSummary>
+
+
             <div class="form-group row">
                 <label for="@Employee.FirstName" class="col-sm-3">First Name:</label>
                 <InputText id="@Employee.FirstName" class="form-control col-sm-8" @bind-Value="@Employee.FirstName" placeholder="Enter first name"></InputText>
@@ -18,6 +22,7 @@
             <div class="form-group row">
                 <label for="@Employee.LastName" class="col-sm-3">Last Name:</label>
                 <InputText id="@Employee.LastName" class="form-control col-sm-8" @bind-Value="@Employee.LastName" placeholder="Enter last name"></InputText>
+                <ValidationMessage class="offset-sm-3 col-sm-8" For="@(() => Employee.LastName)" />
             </div>
 
             <div class="form-group row">
@@ -132,7 +137,7 @@
                 </a>
             }
 
-            @*<a class="btn btn-outline-primary" @onclick="@NavigateToOverview">Back to overview</a>*@
+            <a class="btn btn-outline-primary" @onclick="@NavigateToOverview">Back to overview</a>
 
         </EditForm>
     </section>
