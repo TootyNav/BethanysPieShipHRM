@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using BethanysPieShopHRM.ComponentsLibrary.Map;
 
 namespace BethanysPieShopHRM.App.Pages
 {
@@ -17,9 +18,18 @@ namespace BethanysPieShopHRM.App.Pages
 		[Inject]
 		public IEmployeeDataService EmployeeDataService { get; set; }
 
+		public List<Marker> MapMarkers { get; set; } = new List<Marker>();
+
+
 		protected async override  Task OnInitializedAsync()
 		{
 			Employee = await EmployeeDataService.GetEmployeeDetails(int.Parse(EmployeeId));
+
+			MapMarkers = new List<Marker>
+			{
+				new Marker{Description = $"{Employee.FirstName} {Employee.LastName}",  ShowPopup = false, X = Employee.Longitude, Y = Employee.Latitude}
+			};
+
 
 			//InitializeCountries();
 			//InitializeJobCategories();
