@@ -18,7 +18,14 @@ namespace BethanysPieShopHRM.Api.Controllers
         [HttpGet]
         public IActionResult GetAllEmployees()
         {
-            return Ok(_employeeRepository.GetAllEmployees());
+            var employees = _employeeRepository.GetAllEmployees();
+
+            if (employees == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(employees);
         }
 
         [HttpGet("{id}")]
