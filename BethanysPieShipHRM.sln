@@ -7,8 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BethanysPieShopHRM.App", "B
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BethanysPieShopHRM.Shared", "BethanysPieShopHRM.Shared\BethanysPieShopHRM.Shared.csproj", "{FA2580A6-24FE-46EA-A54D-84A97ACA37BB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BethanysPieShopHRM.Api", "BethanysPieShopHRM.Api\BethanysPieShopHRM.Api.csproj", "{2C3CA0C8-4DBE-4529-B433-2DA656C96219}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BethanysPieShopHRM.ComponentsLibrary", "BethanysPieShopHRM.ComponentsLibrary\BethanysPieShopHRM.ComponentsLibrary.csproj", "{AB56FF05-39E9-4CD4-9C53-B3EFE42D8D8B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BethanysPieShopHRM.ApiNet6", "BethanysPieShopHRM.ApiNet6\BethanysPieShopHRM.ApiNet6.csproj", "{B8DE252A-EAC0-4008-BDF0-700A67D902B0}"
@@ -27,10 +25,6 @@ Global
 		{FA2580A6-24FE-46EA-A54D-84A97ACA37BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA2580A6-24FE-46EA-A54D-84A97ACA37BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA2580A6-24FE-46EA-A54D-84A97ACA37BB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2C3CA0C8-4DBE-4529-B433-2DA656C96219}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2C3CA0C8-4DBE-4529-B433-2DA656C96219}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2C3CA0C8-4DBE-4529-B433-2DA656C96219}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2C3CA0C8-4DBE-4529-B433-2DA656C96219}.Release|Any CPU.Build.0 = Release|Any CPU
 		{AB56FF05-39E9-4CD4-9C53-B3EFE42D8D8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{AB56FF05-39E9-4CD4-9C53-B3EFE42D8D8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB56FF05-39E9-4CD4-9C53-B3EFE42D8D8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
