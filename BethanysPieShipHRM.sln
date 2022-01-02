@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BethanysPieShopHRM.Api", "B
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BethanysPieShopHRM.ComponentsLibrary", "BethanysPieShopHRM.ComponentsLibrary\BethanysPieShopHRM.ComponentsLibrary.csproj", "{AB56FF05-39E9-4CD4-9C53-B3EFE42D8D8B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BethanysPieShopHRM.ApiNet6", "BethanysPieShopHRM.ApiNet6\BethanysPieShopHRM.ApiNet6.csproj", "{B8DE252A-EAC0-4008-BDF0-700A67D902B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BethanysPieShopHRM.ApiNet6", "BethanysPieShopHRM.ApiNet6\BethanysPieShopHRM.ApiNet6.csproj", "{B8DE252A-EAC0-4008-BDF0-700A67D902B0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
